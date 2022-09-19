@@ -1,0 +1,137 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.main {
+    height: 100%;
+    width: auto;
+    margin-left: 200px;
+}
+
+/* SIDEBAR - Menu lateral */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #474935;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #d9f0ff;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #4682b4;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* FLEXBOX - Imagem e nome da empresa */
+.flex-titlenav {
+    display: flex;
+    padding: 16px;
+    border: 4px solid darkgray;
+    height: 200px;
+    flex: 1 1 0%;
+    gap: 12px;
+    align-items: center;
+}
+
+.flex-titlenav .img {
+    width: 140px;
+    height: 140px;
+    border: 2px solid black;
+    background: #d9f0ff;
+}
+
+.flex-titlenav .name {
+    flex: 3 1 0%;
+    font-weight: 700;
+}
+
+.flex-clientinfo {
+    display: flex;
+    padding: 16px;
+    height: 100%;
+    flex: 1 1 0%;
+    gap: 8px;
+    align-items: center;
+    background-color: lightgray;
+    flex-wrap: wrap;
+}
+
+.flex-clientinfo .company-name {
+    height: 30px;
+    width: 100%;
+}
+.flex-clientinfo .user {
+    height: 30px;
+    width: 50%;
+}
+.flex-clientinfo .email {
+    height: 30px;
+    width: 50%;
+}
+.flex-clientinfo .address {
+    height: 30px;
+    width: 100%;
+}
+.flex-clientinfo .number {
+    height: 30px;
+    width: 100%;
+}
+.flex-clientinfo .complement {
+    height: 30px;
+    width: 100%;
+}
+.flex-clientinfo .CEP {
+    height: 30px;
+    width: 100%;
+}
+.flex-clientinfo .neighborhood {
+    height: 30px;
+    width: 100%;
+}
+.flex-clientinfo .city {
+    height: 30px;
+    width: 100%;
+}
+.flex-clientinfo .estate {
+    height: 30px;
+    width: 100%;
+}
+.flex-clientinfo .phone {
+    height: 30px;
+    width: 100%;
+}
