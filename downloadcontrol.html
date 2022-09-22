@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enerbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0299c0e949.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Menu lateral -->
+        <div class="sidenav">
+            <a href="./index.html"><i class="fa-solid fa-circle-user"></i> Usuário</a>
+            <a href="./downloadcontrol.html"><i class="fa-solid fa-download"></i> Controle Acesso Download</a>
+            <a href="./bot.html"><i class="fa-solid fa-robot"></i> Bot</a>
+            <a href="./dashboard.html"><i class="fa-solid fa-chart-simple"></i> Dashboard</a>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
+        </div>
+        <div class="main">
+            <section class="mainsection">
+                <div class="grid-downloadcontrol">
+                    <div class="registration">
+                        <fieldset>
+                            <legend><b>Cadastro</b></legend><br>
+                            <form>
+                                <label for="code">Código:</label><br>
+                                <input type="text" name="code" id="code" size="10"><br> <br>
+                                <label for="client">Cliente:</label><br>
+                                <input list="client" size="60">
+                                <datalist id="client">
+                                    <option value="00105 - SANTANDER"></option>
+                                </datalist><br> <br>
+                                <label for="mobile">Operadora:</label><br>
+                                <input list="mobile" size="60">
+                                <datalist id="mobile">
+                                    <option value="00001 - Vivo"></option>
+                                </datalist><br> <br>
+                                <label for="cnpj">CNPJ:</label><br>
+                                <input type="text" name="cnpj" id="cnpj" size="60"><br> <br>
+                                <label for="cpf">CPF:</label><br>
+                                <input type="text" name="cpf" id="cpf" size="60"><br> <br>
+                                <label for="login">Login Portal:</label><br>
+                                <input type="text" name="login" id="login" size="60"><br> <br>
+                                <label for="password">Senha Portal:</label><br>
+                                <input type="text" name="password" id="password" size="60"><br><br>
+                                <label for="url-portal">URL Portal:</label><br>
+                                <input type="text" name="url-portal" id="url-portal" size="60"><br> <br>
+                                <label for="email">E-mail:</label><br>
+                                <input type="email" name="email" id="email" size="60"><br> <br>
+                                <label for="ver-date">Dia de Verificação: </label>
+                                <input type="number" max="30" min="1" name="ver-date1" id="ver-date1"><span> até </span>
+                                <input type="number" max="30" min="1" name="ver-date2" id="ver-date2"><br><br>
+                                <label for="end-date">Dia de Vencimento: </label>
+                                <input type="number" max="30" min="1" name="end-date" id="end-date"><br><br>
+                                <input type="checkbox" id="active" name="active" value="Ativo">
+                                <label for="active"> Ativo</label><br><br>
+                                <input type="button" onclick="alert('Tem certeza de que deseja voltar?')" value="Voltar">
+                                <input type="button" value="Editar">
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="history">
+                        <fieldset>
+                            <legend><b>Histórico de alteração</b></legend>
+                        </fieldset>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
